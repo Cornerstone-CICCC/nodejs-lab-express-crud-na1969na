@@ -78,7 +78,7 @@ For the frontend, create an `index.html` and `app.js` file inside your `frontend
 
 Send fetch requests using `GET`, `POST`, `PUT`, `DELETE` methods to your backend.
 
-- **List Employees** - List all employees
+- **List Employees** - List all employees when page loads
     - *View button* - Show employee info on the right section
     - *Edit button* - Fill the fields inside the **Edit Employee** form
     - *Delete button* - Delete employee
