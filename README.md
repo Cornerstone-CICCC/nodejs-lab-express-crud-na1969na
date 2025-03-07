@@ -83,9 +83,33 @@ const getEmployees = async () => {
    const res = await fetch(`http://localhost:3500/employees`, {
       method: 'GET'
    });
+
+   if (!response.ok) {
+     throw new Error(`Failed to add employee: ${response.statusText}`);
+   }
+
    const data = await res.json();
-   return data
+   return data;
 }
+
+const addEmployee = async (firstname, lastname, age, isMarried) => {
+   const res = await fetch("http://localhost:3500/employees", {
+     method: "POST",
+     headers: {
+       "Content-Type": "application/json",
+     },
+     body: JSON.stringify({ firstname, lastname, age, isMarried }),
+   });
+
+   if (!response.ok) {
+     throw new Error(`Failed to add employee: ${response.statusText}`);
+   }
+
+   const data = await res.json(); // Returned employee data
+   return data;
+};
+
+// Add the rest of the functions
 ```
 
 You can learn more on the [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch#setting_a_body).
