@@ -48,7 +48,8 @@
     POST /employees     # Add employee
     PUT /employees/:id    # Update employee by ID
     DELETE /employees/:id   # Delete employee by ID
-    GET /employees/search   # Search employees by firstname using query parameter (http://localhost:3500/employees/search?firstname=john)
+    GET /employees/search   # Search employees by firstname using query parameter
+                            # (http://localhost:3500/employees/search?firstname=john)
     ```
 
     ```ts
