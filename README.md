@@ -96,7 +96,7 @@ const addEmployee = async (firstname, lastname, age, isMarried) => {
    const res = await fetch("http://localhost:3500/employees", {
      method: "POST",
      headers: {
-       "Content-Type": "application/json",
+       "Content-Type": "application/json", // When doing POST/PUT/PATCH, you need to set the Content-Type
      },
      body: JSON.stringify({ firstname, lastname, age, isMarried }),
    });
