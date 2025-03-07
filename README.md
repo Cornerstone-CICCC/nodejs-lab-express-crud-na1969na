@@ -80,8 +80,8 @@ Send fetch requests using `GET`, `POST`, `PUT`, `DELETE` methods to your backend
 
 ```js
 const getEmployees = async () => {
-   const res = await fetch(`http://localhost:3500/employees`, {
-      method: 'GET'
+   const res = await fetch("http://localhost:3500/employees", {
+      method: "GET"
    });
 
    if (!response.ok) {
