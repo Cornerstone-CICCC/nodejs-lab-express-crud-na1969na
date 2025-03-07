@@ -24,6 +24,7 @@
     ```bash
     @types/node
     @types/express
+    @types/cors
     nodemon
     typescript
     ```
