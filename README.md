@@ -78,6 +78,18 @@ For the frontend, create an `index.html` and `app.js` file inside your `frontend
 
 Send fetch requests using `GET`, `POST`, `PUT`, `DELETE` methods to your backend.
 
+```js
+const getEmployees = async () => {
+   const res = await fetch(`http://localhost:3500/employees`, {
+      method: 'GET'
+   });
+   const data = await res.json();
+   return data
+}
+```
+
+You can learn more on the [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch#setting_a_body).
+
 - **List Employees** - List all employees when page loads
     - *View button* - Show employee info on the right section
     - *Edit button* - Fill the fields inside the **Edit Employee** form
